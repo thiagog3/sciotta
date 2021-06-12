@@ -9,7 +9,8 @@
     "build": "npm run build:cjs && npm run build:es",
     "build:cjs": "BABEL_ENV=cjs babel index.js --out-file index.cjs.js --source-maps",
     "build:es": "BABEL_ENV=es babel index.js --out-file index.es.js --source-maps",
-    "postinstall": "npm ci && npm run build"
+    "preinstall": "npm install --ignore-scripts",
+    "postinstall": "npm run build"
   },
   "author": "",
   "license": "ISC",
