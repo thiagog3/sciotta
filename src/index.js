@@ -1,3 +1,6 @@
+export { default as Button } from './Button';
+export * from './Button';
+
 export function flatten(array) {
 	return array.reduce((accumulator, value) => {
 		return accumulator.concat(Array.isArray(value) ? flatten(value) : value);
