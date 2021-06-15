@@ -1,5 +1,5 @@
-export { default as Button } from './Button';
-export * from './Button';
+export { default as Button } from './button';
+export * from './button';
 
 export function flatten(array) {
 	return array.reduce((accumulator, value) => {
